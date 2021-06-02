@@ -1,0 +1,32 @@
+.button {
+    height: 100%;
+    width: 100%;
+    background-color: $purple;
+    display: flex;
+    align-items: center;
+    padding: $normal $large;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: $small;
+
+    button {
+        bottom: 0;
+        padding: $medium $large;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: $white;
+        
+        svg {
+            width: 28px;
+            height: 28px;
+            color: inherit;
+            margin: 0;
+            margin-left: $medium;
+        }
+    }
+}
