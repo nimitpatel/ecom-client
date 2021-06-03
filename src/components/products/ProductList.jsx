@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useCallAction, useStoreFetch } from "../../hooks"
 import { SET_PRODUCT_LIST } from "../../contexts/types"
 import { get } from "../../utils/axiosHandlers"
+import { ProductCard } from "../common/ProductCard"
 
 export const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -17,12 +18,12 @@ export const ProductList = () => {
     useEffect(() => {
         setProducts(list)
     }, [list, loading])
-    
+
     return (
-        <>
-            {loading? 'loading...' : products.map(item => {
-                return <p>{item.name}</p>
-            })}
-        </>
+        <div className="cards">
+            {loading ? 'loading...' : products.map(({ url, id, name, category }) => (
+                <ProductCard src={url} name={name} category={category} id={id} />
+            ))}
+        </div>
     )
 }

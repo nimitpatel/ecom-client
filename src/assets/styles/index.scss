@@ -3,6 +3,8 @@
 @import './variables';
 @import './navbar';
 @import './button';
+@import './productList';
+@import './productCard';
 
 html, body {
     width: 100%;
@@ -21,7 +23,9 @@ html, body {
 main {
     flex: auto;
     min-height: calc(100vh - 138px);
-    background-color: lighten($color: $purple, $amount: 10);
+    padding: $medium;
+    // background-color: lighten($color: $purple, $amount: 10);
+    background-color: $offwhite;
 }
 
 footer {
