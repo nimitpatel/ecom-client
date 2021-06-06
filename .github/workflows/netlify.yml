@@ -27,4 +27,4 @@ jobs:
       - name: imstall dependencies
         run: yarn
       - name: build app
-        run: yarn run build
+        run: CI=false yarn run build
