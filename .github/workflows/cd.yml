@@ -34,7 +34,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.2.2
         with:
           # Publish directory
-          publish-dir: './public'
+          publish-dir: './build'
           # Production branch
           production-branch: master
           # Custom deploy message for Netlify
