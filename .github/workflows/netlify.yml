@@ -25,6 +25,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: imstall dependencies
-        run: npm ci
+        run: yarn ci
       - name: build app
-        run: npm run build
+        run: yarn run build
