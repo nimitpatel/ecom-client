@@ -27,7 +27,7 @@ jobs:
       - name: imstall dependencies
         run: yarn
       - name: build app
-        run: CI=false yarn build  && echo '/* /index.html  200' | cat >build/_redirects
+        run: CI=false REACT_APP_ENV=PROD yarn build  && echo '/* /index.html  200' | cat >build/_redirects
       - name: deploy to netlify
         # You may pin to the exact commit or the version.
         # uses: nwtgck/actions-netlify@f517512ae75beec8896aa7b027c1c72f01816200

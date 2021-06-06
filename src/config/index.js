@@ -5,7 +5,7 @@ const DEV = {
 }
 
 const PROD = {
-    host: 'https://ecom-api.proffie.me',
+    host: 'https://api-for-ecom.herokuapp.com',
     stripe: ''
 }
 
