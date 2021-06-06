@@ -21,4 +21,21 @@
             height: 100%;
         }
     }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: $medium 0 $small 0 ; 
+        }
+
+        p {
+            color: $grey;
+            margin: $small 0 $medium 0;
+        }
+    }
 }

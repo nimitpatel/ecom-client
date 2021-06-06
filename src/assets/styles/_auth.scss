@@ -1,0 +1,12 @@
+.login-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    @media screen and (max-width: 678px) {
+        img {
+            width: 100%;
+        }
+    }
+}

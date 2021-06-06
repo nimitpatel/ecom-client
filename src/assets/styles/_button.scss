@@ -2,8 +2,8 @@
     height: 100%;
     width: 100%;
     background-color: $purple;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding: $normal $large;
     text-transform: uppercase;
     font-weight: bold;
@@ -20,13 +20,30 @@
         display: flex;
         align-items: center;
         color: $white;
+
+        i {
+            display: flex;
+            margin: auto;
+        }
         
         svg {
             width: 28px;
             height: 28px;
             color: inherit;
             margin: 0;
-            margin-left: $medium;
+            margin-left: auto;
+        }
+    }
+
+    &.login-btn {
+        @media screen and (max-width: 678px) {
+            label {
+                display: none;
+            }
+
+            svg {
+                margin: 0;
+            }
         }
     }
 }

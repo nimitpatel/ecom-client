@@ -4,7 +4,6 @@ import { useCheckAuth } from "../../hooks"
 import { Button } from "./Button"
 
 import { CartIcon, ProfileIcon, UnlockIcon } from "../../assets/icon"
-import { host } from '../../config'
 
 export const Navbar = _ => {
     const { isAuth } = useCheckAuth()
@@ -24,10 +23,11 @@ export const Navbar = _ => {
                             </Link>
                         </> :
                         <Button 
-                            type="link"
+                            type="atag"
                             label="unlock"
-                            href={`${host}/auth/google`}
+                            href='/login'
                             icon={<UnlockIcon />}
+                            className="login-btn"
                         />
                 }
             </div>

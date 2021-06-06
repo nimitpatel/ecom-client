@@ -32,5 +32,11 @@ nav {
             text-decoration: none;
             cursor: pointer;
         }
+
+        a {
+            svg {
+                margin-left: $medium;
+            }
+        }
     }
 }
